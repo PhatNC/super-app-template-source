@@ -15,6 +15,9 @@
 		236B645403FC156CC8036ACC /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 7CC48639DE88C80395222709 /* PrivacyInfo.xcprivacy */; };
 		7699B88040F8A987B510C191 /* libPods-SuperApp-SuperAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-SuperApp-SuperAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		FA9FA5FD2C11AE4800C4B686 /* index.ios-1.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA9FA5FB2C11AE4800C4B686 /* index.ios-1.bundle */; };
+		FA9FA5FE2C11AE4800C4B686 /* index.ios-2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA9FA5FC2C11AE4800C4B686 /* index.ios-2.bundle */; };
+		FA9FA6012C11AEAA00C4B686 /* ConnectNativeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9FA6002C11AEAA00C4B686 /* ConnectNativeModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +46,14 @@
 		5709B34CF0A7D63546082F79 /* Pods-SuperApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperApp.release.xcconfig"; path = "Target Support Files/Pods-SuperApp/Pods-SuperApp.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-SuperApp-SuperAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperApp-SuperAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SuperApp-SuperAppTests/Pods-SuperApp-SuperAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-SuperApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SuperApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CC48639DE88C80395222709 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = SuperApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		7CC48639DE88C80395222709 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = SuperApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SuperApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-SuperApp-SuperAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperApp-SuperAppTests.release.xcconfig"; path = "Target Support Files/Pods-SuperApp-SuperAppTests/Pods-SuperApp-SuperAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FA9FA5FB2C11AE4800C4B686 /* index.ios-1.bundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "index.ios-1.bundle"; sourceTree = "<group>"; };
+		FA9FA5FC2C11AE4800C4B686 /* index.ios-2.bundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "index.ios-2.bundle"; sourceTree = "<group>"; };
+		FA9FA5FF2C11AE7500C4B686 /* ConnectNativeModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConnectNativeModule.h; path = SuperApp/ConnectNativeModule.h; sourceTree = "<group>"; };
+		FA9FA6002C11AEAA00C4B686 /* ConnectNativeModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ConnectNativeModule.m; path = SuperApp/ConnectNativeModule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +104,8 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 				7CC48639DE88C80395222709 /* PrivacyInfo.xcprivacy */,
+				FA9FA5FF2C11AE7500C4B686 /* ConnectNativeModule.h */,
+				FA9FA6002C11AEAA00C4B686 /* ConnectNativeModule.m */,
 			);
 			name = SuperApp;
 			sourceTree = "<group>";
@@ -121,6 +130,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				FA9FA5FB2C11AE4800C4B686 /* index.ios-1.bundle */,
+				FA9FA5FC2C11AE4800C4B686 /* index.ios-2.bundle */,
 				13B07FAE1A68108700A75B9A /* SuperApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* SuperAppTests */,
@@ -247,8 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				FA9FA5FD2C11AE4800C4B686 /* index.ios-1.bundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				236B645403FC156CC8036ACC /* PrivacyInfo.xcprivacy in Resources */,
+				FA9FA5FE2C11AE4800C4B686 /* index.ios-2.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9FA6012C11AEAA00C4B686 /* ConnectNativeModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -590,10 +604,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -665,10 +676,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
